@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    padding: 10px 4%;
+    background: #edf2f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header a{
+    color: #2a9d8f;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.shop{
+    position: relative;
+}
+
+.shop i{
+    font-size: 22px;
+    color: #14213d;
+    cursor: pointer;
+}
+
+.shop span{
+    position: absolute; 
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #2a9d8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -9px;
+    right: -6px;
+    font-size: 12px;
+}
+.hide{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.container .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3 ,minmax(300px, 1fr)); 
+}
+
+
+.box{
+    border: 1px solid lightgray;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 310px;
+}
+
+
+.box img{
+    height: 10rem;
+    margin-bottom: .5rem;
+    object-fit: cover;
+}
+
+
+.box h3{
+    color: #2a9d8f;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+.box h5{
+    color: #14213d;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+
+.box p{
+    color: #14213d;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box button{
+    color: #fff;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    background-color: #2a9d8f;
+    padding: .4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box button:hover{
+    color: #fff;
+    background-color: #14213d;
+}
+@media (max-width:600px) {
+    .container .wrapper{
+        display: block;
+    }
+}
